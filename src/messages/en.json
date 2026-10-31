@@ -1,0 +1,39 @@
+{
+  "Hero": {
+    "imageAlt": "All morocco tours experience in Marrakech",
+    "title": "All morocco",
+    "titleHighlight": " tours",
+    "subtitle": "Morocco luxury tours & Morocco travel destinations",
+    "description": "All morocco tours creates private Morocco luxury tours and tailor-made journeys across the country's most remarkable Morocco travel destinations, from Marrakech and Fes to the Sahara Desert and imperial cities.",
+    "toursButton": "Private Morocco Tours",
+    "quoteButton": "Get a Free Quote",
+    "tailorMade": "Tailor-made itineraries",
+    "expertTours": "morocco expert tours"
+  },
+  "Header": {
+    "home": "Home",
+    "tours": "Tours",
+    "sharedTours": "Shared Tours",
+    "dayTrips": "Day Trips",
+    "activities": "Activities",
+    "customTour": "Custom Tour",
+    "blog": "Blog",
+    "about": "About Us",
+    "contact": "Contact",
+    "allTours": "All morocco tours",
+    "fromMarrakech": "Tours from Marrakech",
+    "fromFes": "Tours from Fes",
+    "fromCasablanca": "Tours from Casablanca",
+    "fromTangier": "Tours from Tangier",
+    "fromAgadir": "Tours from Agadir",
+    "fromOuarzazate": "Tours from Ouarzazate",
+    "aboutCompany": "About All morocco tours",
+    "aboutpolicybooking": "Booking et cancellation policy",
+    "homeLabel": "All morocco tours home",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "mainNavigation": "Main navigation",
+    "mobileNavigation": "Mobile navigation",
+    "changeLanguage": "Change language"
+  }
+}

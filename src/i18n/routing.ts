@@ -1,0 +1,83 @@
+import { defineRouting } from "next-intl/routing";
+import { createNavigation } from "next-intl/navigation";
+
+export const routing = defineRouting({
+  locales: ["en", "es"],
+  defaultLocale: "en",
+  localePrefix: "as-needed",
+
+  pathnames: {
+    "/": "/",
+
+    // Tours
+    "/tours": {
+      en: "/tours",
+      es: "/tours",
+    },
+
+    "/tours/[slug]": {
+      en: "/tours/[slug]",
+      es: "/tours/[slug]",
+    },
+
+    "/tours/from/[city]": {
+      en: "/tours/from/[city]",
+      es: "/tours/desde/[city]",
+    },
+
+    "/shared-tours": {
+      en: "/shared-tours",
+      es: "/tours-compartidos",
+    },
+
+    // Day Trips
+    "/day-trips": {
+      en: "/day-trips",
+      es: "/excursiones",
+    },
+
+    "/day-trips/[slug]": {
+      en: "/day-trips/[slug]",
+      es: "/excursiones/[slug]",
+    },
+
+    // Customize
+    "/customize-your-tour": {
+      en: "/customize-your-tour",
+      es: "/personaliza-tu-tour",
+    },
+
+    // Blog
+    "/blog": {
+      en: "/blog",
+      es: "/blog",
+    },
+
+    "/blog/[slug]": {
+      en: "/blog/[slug]",
+      es: "/blog/[slug]",
+    },
+
+    // About
+    "/about": {
+      en: "/about",
+      es: "/sobre-nosotros",
+    },
+
+    "/about/booking-cancellation_policy": {
+      en: "/about/booking-cancellation_policy",
+      es: "/sobre-nosotros/politica-de-reservas-y-cancelaciones",
+    },
+
+    // Contact
+    "/contact": {
+      en: "/contact",
+      es: "/contacto",
+    },
+  },
+});
+
+export type Locale = (typeof routing.locales)[number];
+export type Pathnames = keyof typeof routing.pathnames;
+
+export const { Link, redirect, usePathname, useRouter, getPathname } = createNavigation(routing);

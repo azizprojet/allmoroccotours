@@ -1,0 +1,40 @@
+{
+  "Hero": {
+    "imageAlt": "Experiencia de viaje de lujo por Marruecos en Marrakech",
+    "title": "All morocco",
+    "titleHighlight": " tours",
+    "subtitle": "Viajes de lujo por Marruecos y destinos de viaje en Marruecos",
+    "description": "All morocco tours crea viajes privados de lujo por Marruecos y viajes a medida por los destinos más destacados del país, desde Marrakech y Fez hasta el desierto del Sahara y las ciudades imperiales.",
+    "toursButton": "Viajes privados por Marruecos",
+    "quoteButton": "Solicita un presupuesto gratuito",
+    "tailorMade": "Itinerarios a medida",
+    "expertTours": "viajes con expertos en Marruecos"
+  },
+  "Header": {
+    "home": "Inicio",
+    "tours": "Circuitos",
+    "sharedTours": "Circuitos compartidos",
+    "dayTrips": "Excursiones",
+    "activities": "Actividades",
+    "customTour": "Viaje a medida",
+    "blog": "Blog",
+    "about": "Sobre nosotros",
+    "contact": "Contacto",
+    "allTours": "Circuitos de lujo por Marruecos",
+    "fromMarrakech": "Circuitos desde Marrakech",
+    "fromFes": "Circuitos desde Fez",
+    "fromCasablanca": "Circuitos desde Casablanca",
+    "fromTangier": "Circuitos desde Tánger",
+    "fromAgadir": "Circuitos desde Agadir",
+    "fromOuarzazate": "Circuitos desde Ouarzazate",
+    "aboutCompany": "Sobre All morocco tours",
+    "aboutpolicybooking": "Política de reservas y cancelaciones",
+    "favorites": "Favoritos",
+    "homeLabel": "Inicio de All morocco tours",
+    "openMenu": "Abrir el menú de navegación",
+    "closeMenu": "Cerrar el menú de navegación",
+    "mainNavigation": "Navegación principal",
+    "mobileNavigation": "Navegación móvil",
+    "changeLanguage": "Cambiar de idioma"
+  }
+}
