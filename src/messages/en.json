@@ -35,5 +35,24 @@
     "mainNavigation": "Main navigation",
     "mobileNavigation": "Mobile navigation",
     "changeLanguage": "Change language"
+  },
+  "Footer": {
+    "tagline": "Luxury Moroccan Journeys & Desert Adventures",
+    "description": "Handcrafted private tours, bespoke Sahara desert expeditions, and authentic cultural journeys across Morocco, designed with personal care and local expertise.",
+    "quickLinksTitle": "Quick Links",
+    "popularToursTitle": "Tours",
+    "contactTitle": "Contact",
+    "addressTitle": "Headquarters",
+    "addressText": "Marrakech & Merzouga, Morocco",
+    "workingHours": "24/7 Concierge & Support",
+    "planTripTitle": "Ready to Experience Morocco?",
+    "planTripSubtitle": "Let our local destination experts craft your tailor-made itinerary.",
+    "planTripButton": "Customize Your Tour",
+    "bookingPolicy": "Booking & Cancellation Policy",
+    "rights": "All rights reserved.",
+    "logoPlaceholder": "LOGO PLACEHOLDER",
+    "followUs": "Follow Our Journeys",
+    "whatsappUs": "Chat on WhatsApp",
+    "emailUs": "Email Our Team"
   }
 }
