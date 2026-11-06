@@ -9,6 +9,8 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import { AlternateSlugsProvider } from "@/contexts/AlternateSlugsContext";
 
+export const instant = false;
+
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
@@ -23,18 +25,21 @@ const manrope = Manrope({
   display: "swap",
 });
 
-
-
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({children,params,}: { children: React.ReactNode; params: Promise<{ locale: string }>;}) {
-
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) {
-     notFound();
+    notFound();
   }
 
   setRequestLocale(locale);
@@ -55,7 +60,9 @@ export default async function LocaleLayout({children,params,}: { children: React
             >
               <Header />
             </Suspense>
+
             <main className="flex-1 w-full">{children}</main>
+
             <Footer />
           </AlternateSlugsProvider>
         </NextIntlClientProvider>
@@ -63,4 +70,3 @@ export default async function LocaleLayout({children,params,}: { children: React
     </html>
   );
 }
-
