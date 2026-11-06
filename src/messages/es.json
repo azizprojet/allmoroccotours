@@ -36,5 +36,24 @@
     "mainNavigation": "Navegación principal",
     "mobileNavigation": "Navegación móvil",
     "changeLanguage": "Cambiar de idioma"
+  },
+  "Footer": {
+    "tagline": "Viajes de Lujo y Aventuras en el Desierto de Marruecos",
+    "description": "Circuitos privados hechos a medida, expediciones al desierto del Sahara y experiencias culturales auténticas por Marruecos con expertos locales.",
+    "quickLinksTitle": "Enlaces Rápidos",
+    "popularToursTitle": "Ciudades de Salida",
+    "contactTitle": "Contacto",
+    "addressTitle": "Sede",
+    "addressText": "Marrakech y Merzouga, Marruecos",
+    "workingHours": "Atención y asistencia 24/7",
+    "planTripTitle": "¿Listo para descubrir Marruecos?",
+    "planTripSubtitle": "Deja que nuestros especialistas locales diseñen tu itinerario personalizado.",
+    "planTripButton": "Personaliza tu Viaje",
+    "bookingPolicy": "Política de Reservas y Cancelaciones",
+    "rights": "Todos los derechos reservados.",
+    "logoPlaceholder": "ESPACIO DE LOGOTIPO",
+    "followUs": "Síguenos",
+    "whatsappUs": "Contactar por WhatsApp",
+    "emailUs": "Escribir al equipo"
   }
 }
