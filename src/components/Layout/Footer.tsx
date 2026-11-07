@@ -45,16 +45,6 @@ export default function Footer(): React.JSX.Element {
               {tFooter("description")}
             </p>
 
-            {/* Trust highlights */}
-            <div className="flex flex-col gap-2 pt-1 text-xs text-footer-muted">
-              <div className="flex items-center gap-2">
-                <span>Licensed Moroccan Agency &amp; Professional Drivers</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>100% Private, Tailor-Made Desert Expeditions</span>
-              </div>
-            </div>
-
             {/* Social Links */}
             <div className="pt-2">
               <span className="block text-xs font-semibold uppercase tracking-wider text-footer-muted mb-3">
