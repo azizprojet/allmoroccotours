@@ -75,23 +75,71 @@
     "ctaDescription": "Planifiquemos juntos tu viaje perfecto. Cuéntanos lo que sueñas y lo haremos realidad.",
     "ctaButton": "Contáctanos"
   },
+  "ContactForm": {
+    "title": "¿Tienes un viaje a Marruecos en mente?",
+    "titleHighlight": "¡Hablemos de ello!",
+    "description": "¿Tienes alguna pregunta o petición especial? Cuéntanos tus planes de viaje y nuestro equipo local estará encantado de ayudarte a descubrir Marruecos a tu manera.",
+    "fullName": "Nombre completo",
+    "fullNamePlaceholder": "Tu nombre completo",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "nombre@ejemplo.com",
+    "whatsapp": "WhatsApp (Opcional)",
+    "whatsappPlaceholder": "+34 612 345 678",
+    "message": "Tu mensaje",
+    "messagePlaceholder": "Cuéntanos tus planes de viaje, dudas o peticiones especiales...",
+    "submit": "Enviar mi mensaje",
+    "submitting": "Enviando tu mensaje...",
+    "successTitle": "¡Tu mensaje se ha enviado correctamente!",
+    "successDescription": "Gracias por escribirnos. Nuestro equipo local en Marruecos se pondrá en contacto contigo pronto.",
+    "errorTitle": "No hemos podido enviar tu mensaje",
+    "errorDescription": "Inténtalo de nuevo o contáctanos directamente por WhatsApp.",
+    "privacyNote": "Sin compromiso, solo asesoramiento cercano de nuestro equipo local en Marruecos.",
+    "validationError": "Introduce tu nombre, un correo válido y un mensaje de entre 10 y 5.000 caracteres.",
+    "whatsappHelp": "¿Prefieres WhatsApp? Habla con nuestro equipo."
+  },
   "Footer": {
-    "tagline": "Viajes de Lujo y Aventuras en el Desierto de Marruecos",
-    "description": "Tu equipo local en Marruecos para circuitos privados, aventuras en el desierto y experiencias inolvidables.",
+    "tagline": "Descubre Marruecos con nuestro equipo local",
+    "description": "Circuitos privados y compartidos por Marruecos, viajes al desierto del Sahara e itinerarios adaptados a tus planes.",
     "quickLinksTitle": "Enlaces Rápidos",
     "popularToursTitle": "Ciudades de Salida",
     "contactTitle": "Contacto",
-    "addressTitle": "Sede",
+    "addressTitle": "Ubicaciones",
     "addressText": "Marrakech y Merzouga, Marruecos",
-    "workingHours": "Atención y asistencia 24/7",
+    "workingHours": "Contáctanos para acordar una hora para hablar.",
     "planTripTitle": "¿Listo para descubrir Marruecos?",
     "planTripSubtitle": "Deja que nuestros especialistas locales diseñen tu itinerario personalizado.",
     "planTripButton": "Personaliza tu Viaje",
     "bookingPolicy": "Política de Reservas y Cancelaciones",
     "rights": "Todos los derechos reservados.",
-    "logoPlaceholder": "ESPACIO DE LOGOTIPO",
     "followUs": "Síguenos",
     "whatsappUs": "Contactar por WhatsApp",
-    "emailUs": "Escribir al equipo"
+    "emailUs": "Escribir al equipo",
+    "directCall": "Teléfono",
+    "emailLabel": "Correo electrónico",
+    "availability": "Disponibilidad"
+  },
+  "ContactHero": {
+    "label": "CONTACTA CON ALL MOROCCO TOURS",
+    "title": "Contacta con Nuestros Expertos en Viajes a Marruecos",
+    "description": "¿Tienes preguntas sobre circuitos por Marruecos, excursiones al desierto del Sahara o itinerarios privados? Nuestro equipo local está aquí para ayudarte. Tanto si es tu primera visita como si buscas una experiencia personalizada, escríbenos y hablemos de tus planes de viaje.",
+    "button": "Solicita Asesoramiento Gratuito por WhatsApp",
+    "imageAlt": "Paisaje del desierto del Sahara en Marruecos al atardecer"
+  },
+  "ContactInformation": {
+    "eyebrow": "Hablemos",
+    "title": "Información de contacto",
+    "whatsapp": "WhatsApp",
+    "whatsappNote": "Escríbenos y cuéntanos tus planes de viaje.",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "location": "Ubicaciones",
+    "locationValue": "{cities}, Marruecos",
+    "availability": "Disponibilidad",
+    "availabilityValue": "Contáctanos para acordar una hora para hablar."
+  },
+  "FindUs": {
+    "title": "Marrakech en el mapa",
+    "description": "Este mapa muestra Marrakech como referencia, no la ubicación exacta de una oficina.",
+    "mapTitle": "All Morocco Tours - mapa de Marrakech, Marruecos (vista de la ciudad)"
   }
 }

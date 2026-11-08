@@ -8,6 +8,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import { AlternateSlugsProvider } from "@/contexts/AlternateSlugsContext";
+import { Toaster } from "sonner";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -57,6 +58,7 @@ export default async function LocaleLayout({children,params,}: { children: React
             </Suspense>
             <main className="flex-1 w-full">{children}</main>
             <Footer />
+            <Toaster position="top-right" richColors closeButton />
           </AlternateSlugsProvider>
         </NextIntlClientProvider>
       </body>
