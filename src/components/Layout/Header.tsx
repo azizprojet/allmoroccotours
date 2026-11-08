@@ -1,5 +1,7 @@
 "use client";
 
+import { CONTACT } from "@/config/contact";
+
 import { useEffect, useState, type ComponentProps } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
@@ -26,12 +28,7 @@ type NavLink = {
   dropdown?: DropdownItem[];
 };
 
-const CONTACT = {
-  phone: "+212 667 182 357",
-  phoneHref: "tel:+212667182357",
-  email: "info@allmoroccotours.com",
-  emailHref: "mailto:info@allmoroccotours.com",
-};
+
 
 const TOURS_DROPDOWN: DropdownItem[] = [
   {
@@ -127,14 +124,8 @@ function isLinkActive(pathname: string, href: string): boolean {
   return pathname === href || (href !== "/" && pathname.startsWith(`${href}/`));
 }
 
-function isDropdownActive(
-  pathname: string,
-  href: DropdownItem["href"],
-  city: string | string[] | undefined,
-): boolean {
-  return typeof href === "string"
-    ? pathname === href
-    : pathname === href.pathname && city === href.params.city;
+function isDropdownActive( pathname: string,href: DropdownItem["href"],city: string | string[] | undefined,): boolean {
+  return typeof href === "string" ? pathname === href : pathname === href.pathname && city === href.params.city;
 }
 
 export default function Header(): React.JSX.Element {
@@ -168,18 +159,13 @@ function HeaderContent({ pathname }: { pathname: string }): React.JSX.Element {
     <>
       <header className="sticky top-0 z-[100] w-full">
         <div
-          className={`transition-all duration-300 ${isSolid ? "border-b border-border bg-background/95 shadow-sm backdrop-blur-md" : "border-b border-transparent bg-background/80 backdrop-blur-sm"}`}
-        >
+          className={`transition-all duration-300 ${ isSolid ? "border-b border-border bg-background shadow-sm" : "border-b border-transparent bg-background"}`} >
           <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:h-20 lg:px-8">
             <Logo onClick={closeMobileMenu} />
-
             <DesktopNav pathname={pathname} />
-
             <div className="hidden items-center lg:flex">
               <LanguageSwitcher />
             </div>
-
-            {/* Mobile actions */}
             <div className="flex items-center gap-2 lg:hidden">
               <LanguageSwitcher />
               <MobileMenuButton
@@ -199,6 +185,7 @@ function HeaderContent({ pathname }: { pathname: string }): React.JSX.Element {
 }
 
 
+
 function Logo({ onClick }: { onClick?: () => void }): React.JSX.Element {
   const t = useTranslations("Header");
 
@@ -206,15 +193,16 @@ function Logo({ onClick }: { onClick?: () => void }): React.JSX.Element {
     <Link
       href="/"
       onClick={onClick}
-      className="flex shrink-0 items-center rounded-lg text-heading transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+      className="flex shrink-0 items-center"
       aria-label={t("homeLabel")}
     >
       <Image
-        width={48}
-        height={48}
         src="/logo.png"
-        alt="Luxury Morocco Destinations Logo"
-        className="h-16 w-auto sm:h-20"
+        width={220}
+        height={130}
+        alt="All Morocco Tours Logo"
+        className="h-16 w-auto object-contain sm:h-20 lg:h-24"
+        priority
       />
     </Link>
   );

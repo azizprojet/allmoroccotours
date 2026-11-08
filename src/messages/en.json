@@ -74,23 +74,71 @@
     "ctaDescription": "Let's plan your perfect trip together. Tell us what you're dreaming of and we'll make it happen.",
     "ctaButton": "Get in Touch"
   },
+  "ContactForm": {
+    "title": "Have a Morocco Trip in Mind?",
+    "titleHighlight": "Let's Talk About It.",
+    "description": "Have a question or a special request? Share your travel plans, and our local team will be happy to help you discover Morocco your way.",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "whatsapp": "WhatsApp (Optional)",
+    "whatsappPlaceholder": "+44 7123 456789",
+    "message": "Your Message",
+    "messagePlaceholder": "Tell us about your travel plans, questions, or special requests...",
+    "submit": "Send My Message",
+    "submitting": "Sending Your Message...",
+    "successTitle": "Your message has been sent!",
+    "successDescription": "Thank you for reaching out. Our local Morocco team will get back to you soon.",
+    "errorTitle": "We couldn't send your message",
+    "errorDescription": "Please try again or contact us directly on WhatsApp.",
+    "privacyNote": "No obligation, just friendly advice from our local Morocco team.",
+    "validationError": "Enter your name, a valid email and a message of 10 to 5,000 characters.",
+    "whatsappHelp": "Prefer WhatsApp? Chat with our team."
+  },
   "Footer": {
-    "tagline": "Luxury Moroccan Journeys & Desert Adventures",
-    "description": "Your local Moroccan team for private tours, desert adventures, and unforgettable experiences across Morocco.",
+    "tagline": "Discover Morocco with our local team",
+    "description": "Private and shared Morocco tours, Sahara desert trips and itineraries tailored to your travel plans.",
     "quickLinksTitle": "Quick Links",
     "popularToursTitle": "Tours",
     "contactTitle": "Contact",
-    "addressTitle": "Headquarters",
+    "addressTitle": "Locations",
     "addressText": "Marrakech & Merzouga, Morocco",
-    "workingHours": "24/7 Concierge & Support",
+    "workingHours": "Contact us to arrange a time to talk.",
     "planTripTitle": "Ready to Experience Morocco?",
     "planTripSubtitle": "Let our local destination experts craft your tailor-made itinerary.",
     "planTripButton": "Customize Your Tour",
     "bookingPolicy": "Booking & Cancellation Policy",
     "rights": "All rights reserved.",
-    "logoPlaceholder": "LOGO PLACEHOLDER",
     "followUs": "Follow Our Journeys",
     "whatsappUs": "Chat on WhatsApp",
-    "emailUs": "Email Our Team"
+    "emailUs": "Email Our Team",
+    "directCall": "Phone",
+    "emailLabel": "Email",
+    "availability": "Availability"
+  },
+  "ContactHero": {
+    "label": "CONTACT ALL MOROCCO TOURS",
+    "title": "Get in Touch With Our Morocco Travel Experts",
+    "description": "Have questions about Morocco tours, Sahara desert trips or private itineraries? Our local team is here to help. Whether you're planning your first visit or looking for a personalized experience, send us a message and let's talk about your travel plans.",
+    "button": "Get Free Travel Advice on WhatsApp",
+    "imageAlt": "Sahara Desert landscape in Morocco at sunset"
+  },
+  "ContactInformation": {
+    "eyebrow": "Get in touch",
+    "title": "Contact information",
+    "whatsapp": "WhatsApp",
+    "whatsappNote": "Message us about your travel plans.",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Locations",
+    "locationValue": "{cities}, Morocco",
+    "availability": "Availability",
+    "availabilityValue": "Contact us to arrange a time to talk."
+  },
+  "FindUs": {
+    "title": "Marrakech on the map",
+    "description": "This map shows Marrakech for reference, not an exact office location.",
+    "mapTitle": "All Morocco Tours - map of Marrakech, Morocco (city overview)"
   }
 }

@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { CONTACT } from "@/config/contact";
 import React from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
@@ -9,14 +11,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-const CONTACT = {
-  phone: "+212 667 956 847",
-  phoneHref: "tel:+212667956847",
-  whatsappHref: "https://wa.me/212667956847",
-  email: "allmoroccantour@gmail.com",
-  emailHref: "mailto:allmoroccantour@gmail.com",
-  location: "Marrakech & Merzouga, Morocco",
-};
+
 
 const CITY_TOURS = [
   { city: "marrakech", label: "fromMarrakech" },
@@ -29,6 +24,7 @@ const CITY_TOURS = [
 const CURRENT_YEAR = 2026;
 
 export default function Footer(): React.JSX.Element {
+  const tContact = useTranslations("ContactInformation");
   const tHeader = useTranslations("Header");
   const tFooter = useTranslations("Footer");
 
@@ -38,31 +34,20 @@ export default function Footer(): React.JSX.Element {
       {/* ─── MAIN FOOTER CONTENT ─── */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
-          {/* 1. BRAND & LOGO PLACEHOLDER (Col span 4) */}
+          {/* 1. BRAND & LOGO (Col span 4) */}
           <div className="flex flex-col gap-5 lg:col-span-4">
-            <p>LOGO</p>
+            <Link href="/" aria-label={tHeader("homeLabel")}><Image src="/logo.png" width={220} height={130} alt="All Morocco Tours" className="h-auto w-44 rounded-lg bg-background p-2" /></Link>
             <p className="text-sm leading-relaxed text-footer-muted">
               {tFooter("description")}
             </p>
 
             {/* Social Links */}
+            {/* Contact link */}
             <div className="pt-2">
               <span className="block text-xs font-semibold uppercase tracking-wider text-footer-muted mb-3">
-                {tFooter("followUs")}
+                {tFooter("whatsappUs")}
               </span>
               <div className="flex items-center gap-2.5">
-                <SocialLink
-                  href="https://instagram.com"
-                  label="Instagram"
-                  icon={<InstagramIcon className="h-4 w-4" />}
-                />
-                <SocialLink
-                  href="https://facebook.com"
-                  label="Facebook"
-                  icon={<FacebookIcon className="h-4 w-4" />}
-                />
-
-
                 <SocialLink
                   href={CONTACT.whatsappHref}
                   label="WhatsApp"
@@ -74,9 +59,9 @@ export default function Footer(): React.JSX.Element {
 
           {/* 2. QUICK NAVIGATION (Col span 2) */}
           <div className="lg:col-span-2">
-            <h4 className="font-heading text-lg font-semibold text-footer-foreground">
+            <h2 className="font-heading text-lg font-semibold text-footer-foreground">
               {tFooter("quickLinksTitle")}
-            </h4>
+            </h2>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li>
                 <FooterNavLink href="/" label={tHeader("home")} />
@@ -110,9 +95,9 @@ export default function Footer(): React.JSX.Element {
 
           {/* 3. TOURS BY DEPARTURE CITY  */}
           <div className="lg:col-span-3">
-            <h4 className="font-heading text-lg font-semibold text-footer-foreground">
+            <h2 className="font-heading text-lg font-semibold text-footer-foreground">
               {tFooter("popularToursTitle")}
-            </h4>
+            </h2>
             <ul className="mt-4 space-y-2.5 text-sm">
               {CITY_TOURS.map(({ city, label }) => (
                 <li key={city}>
@@ -141,9 +126,9 @@ export default function Footer(): React.JSX.Element {
 
           {/* 4. CONTACT & CONCIERGE  */}
           <div className="lg:col-span-3">
-            <h4 className="font-heading text-lg font-semibold text-footer-foreground">
+            <h2 className="font-heading text-lg font-semibold text-footer-foreground">
               {tFooter("contactTitle")}
-            </h4>
+            </h2>
             <ul className="mt-4 space-y-3.5 text-sm text-footer-muted">
               <li>
                 <a
@@ -155,7 +140,7 @@ export default function Footer(): React.JSX.Element {
                   </span>
                   <div>
                     <span className="block text-xs uppercase tracking-wider text-footer-muted/80">
-                      Direct Call
+                      {tFooter("directCall")}
                     </span>
                     <span className="font-medium text-footer-foreground group-hover:text-gold">
                       {CONTACT.phone}
@@ -176,7 +161,7 @@ export default function Footer(): React.JSX.Element {
                   </span>
                   <div>
                     <span className="block text-xs uppercase tracking-wider text-footer-muted/80">
-                      WhatsApp 24/7
+                      WhatsApp
                     </span>
                     <span className="font-medium text-footer-foreground group-hover:text-whatsapp">
                       {CONTACT.phone}
@@ -195,7 +180,7 @@ export default function Footer(): React.JSX.Element {
                   </span>
                   <div className="min-w-0">
                     <span className="block text-xs uppercase tracking-wider text-footer-muted/80">
-                      Email
+                      {tFooter("emailLabel")}
                     </span>
                     <span className="break-all font-medium text-footer-foreground group-hover:text-gold">
                       {CONTACT.email}
@@ -213,7 +198,7 @@ export default function Footer(): React.JSX.Element {
                     {tFooter("addressTitle")}
                   </span>
                   <span className="font-medium text-footer-foreground">
-                    {CONTACT.location}
+                    {tContact("locationValue", { cities: CONTACT.cities })}
                   </span>
                 </div>
               </li>
@@ -224,7 +209,7 @@ export default function Footer(): React.JSX.Element {
                 </span>
                 <div>
                   <span className="block text-xs uppercase tracking-wider text-footer-muted/80">
-                    Service Hours
+                    {tFooter("availability")}
                   </span>
                   <span className="font-medium text-footer-foreground">
                     {tFooter("workingHours")}
@@ -247,7 +232,7 @@ export default function Footer(): React.JSX.Element {
 
             <span className="hidden sm:inline text-footer-border">&bull;</span>
             <span className="text-footer-muted/70">
-              Crafted for Authentic Moroccan Luxury
+              {tFooter("tagline")}
             </span>
           </div>
         </div>
@@ -311,36 +296,3 @@ function WhatsAppIcon({ className }: { className?: string }): React.JSX.Element 
   );
 }
 
-function InstagramIcon({ className }: { className?: string }): React.JSX.Element {
-  return (
-    <svg
-      role="img"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className}
-      aria-hidden="true"
-    >
-      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-    </svg>
-  );
-}
-
-function FacebookIcon({ className }: { className?: string }): React.JSX.Element {
-  return (
-    <svg
-      role="img"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className={className}
-      aria-hidden="true"
-    >
-      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-    </svg>
-  );
-}
