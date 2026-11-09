@@ -51,7 +51,10 @@ export default async function LocaleLayout({
       suppressHydrationWarning
       className={`${cormorant.variable} ${manrope.variable} h-full antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-background text-foreground">
+      <body
+        suppressHydrationWarning
+        className="min-h-screen flex flex-col bg-background text-foreground"
+      >
         <NextIntlClientProvider>
           <AlternateSlugsProvider>
             <Suspense
